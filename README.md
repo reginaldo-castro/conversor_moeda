@@ -68,5 +68,8 @@ DB_PORT=5432
     |   ├── docker-compose.yml
     |   └── run.sh
     ├── requirements.txt
-    |── static/css/style.css
+    |── static/
+    |    |── css/
+    |          └── style.css
+    |          └── result.css
     └── README.md
