@@ -64,7 +64,9 @@ DB_PORT=5432
     │   └── urls.py
     ├── manage.py
     ├── Dockerfile
-    ├── docker-compose.yml
+    ├── infra/
+        ├── docker-compose.yml
+        └── run.sh
     ├── requirements.txt
     |── static/css/style.css
     └── README.md
