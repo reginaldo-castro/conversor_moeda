@@ -48,13 +48,13 @@ POSTGRES_PASSWORD=currenypassword
 DB_HOST=db
 DB_PORT=5432
 ```
-3. Construa e suba os containers
+### 3. Construa e suba os containers
  ```
     docker-compose up --build
     Acesse em: http://localhost:8000
 ```
 
-📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto
     
     ├── converter/
     │   ├── templates/converter/convert.html
