@@ -35,8 +35,9 @@ Este é um projeto de conversor de moedas em tempo real utilizando **Django**, c
     cd conversor_moeda
 ```
 
-2. Crie o arquivo .env (opcional)
-# .env
+### 2. Crie o arquivo .env (opcional)
+## .env
+``` 
 DEBUG=True
 ALLOWED_HOSTS=*
 SECRET_KEY=
@@ -46,9 +47,10 @@ POSTGRES_USER=
 POSTGRES_PASSWORD=currenypassword
 DB_HOST=db
 DB_PORT=5432
-
+```
 3. Construa e suba os containers
- ```docker-compose up --build
+ ```
+    docker-compose up --build
     Acesse em: http://localhost:8000
 ```
 
