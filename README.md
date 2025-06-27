@@ -58,13 +58,13 @@ DB_PORT=5432
     
     ├── converter/
     │   ├── templates/converter/convert.html
-    │   ├── static/css/style.css
     │   └── views.py
-    ├── conversor/
+    ├── currency/
     │   ├── settings.py
     │   └── urls.py
     ├── manage.py
     ├── Dockerfile
     ├── docker-compose.yml
     ├── requirements.txt
+    |── static/css/style.css
     └── README.md
