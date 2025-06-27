@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Conversor de Moedas</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="amount">Quantidade:</label>
+        <input type="number" id="amount" name="amount" step="0.01" required>
+        
+        <label for="from_currency">A partir da moeda:</label>
+        <select id="from_currency" name="from_currency" required>
+            <option value="BRL">Real Brasileiro (BRL)</option>
+            <option value="USD">US Dollar</option>
+            <option value="EUR">Euro</option>
+            <option value="GBP">British Pound</option>
+            <option value="JPY">Japanese Yen</option>
+        </select>
+        
+        <label for="to_currency">Em relação à moeda:</label>
+        <select id="to_currency" name="to_currency" required>
+            <option value="BRL">Real Brasileiro (BRL)</option>
+            <option value="USD">US Dollar</option>
+            <option value="EUR">Euro</option>
+            <option value="GBP">British Pound</option>
+            <option value="JPY">Japanese Yen</option>
+        </select>
+        
+        <button type="submit">Converter</button>
+    </form>
+</body>
+</html>

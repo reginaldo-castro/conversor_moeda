@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado da conversão</title>
+    <link rel='stylesheet' href="{% static 'css/result.css' %}">
+</head>
+<body>
+    <h1>Resultado da conversão</h1>
+    <div class="result">
+        <p>
+            {{ amount }} {{ from_currency }} é igual a
+        </p>
+        <p class="amount">
+            {{ converted_amount }} {{ to_currency }}
+        </p>
+    </div>
+    <a href="{% url 'convert' %}" class="back-link">Converter outro valor</a>
+</body>
+</html>
