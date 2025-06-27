@@ -70,6 +70,6 @@ DB_PORT=5432
     ├── requirements.txt
     |── static/
     |    |── css/
-    |          └── style.css
-    |          └── result.css
+    |    └── style.css
+    |    └── result.css
     └── README.md
